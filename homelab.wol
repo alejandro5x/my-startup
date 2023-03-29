@@ -1,0 +1,23 @@
+# WakeOnLan Script
+# - Used at startup to enable all servers after power outage
+# File structure
+# --------------
+# - blank lines are ignored
+# - comment lines are ignored (lines starting with a hash mark '#')
+# - other lines are considered valid records and can have 3 columns:
+#
+#       Hardware address, IP address, destination port
+#
+#   the last two are optional, in which case the following defaults
+#   are used:
+#
+#       IP address: 255.255.255.255 (the limited broadcast address)
+#       port:       9 (the discard port)
+#
+
+#00:16:3e:a3:9d:a8      192.168.1.255           9
+#00:16:3e:08:ed:c6      255.255.255.255
+# Lenovo T470 HomeAssistant
+xx:xx:xx:xx:xx:xx
+# Server
+################
