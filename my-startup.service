@@ -1,8 +1,9 @@
 [Unit]
 Description=My Startup Script
-After=network.target
+After=network-online.target
 
 [Service]
+ExecStartPre=/bin/sh -c 'until ping -c1 192.168.1.1; do sleep 1; done;'
 ExecStart=/usr/local/sbin/my-startup.sh
 Restart=always
 User=root
